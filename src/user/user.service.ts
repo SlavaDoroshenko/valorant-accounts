@@ -33,6 +33,8 @@ export class UserService implements OnModuleInit {
     console.log(accounts);
 
     this.sendStartTaskToQueue(accounts);
+
+    return { msg: 'Task have been starded' };
   }
 
   async sendStartTaskToQueue(accounts: Account[]) {
